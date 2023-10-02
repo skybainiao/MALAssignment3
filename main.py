@@ -59,7 +59,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
-X = risoe_common[['ws77', 'wd77']].to_pandas().values  
+X = risoe_common[['ws77', 'wd77']].to_pandas().values
 y = borglum_common['ws77'].to_pandas().values
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
